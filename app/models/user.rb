@@ -4,4 +4,7 @@ class User < ApplicationRecord
   before_validation { email.downcase! }
   has_secure_password
   validates :password, length: { minimum: 6 }
+
+  # 1つのファイルを1つのレコードに添付できるように関連付けを行います。
+  has_one_attached :profile_image
 end

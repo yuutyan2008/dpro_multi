@@ -1,3 +1,9 @@
+<% if @user.profile_image.attached? %>
+<%= image_tag @user.profile_image %>
+<% else %>
+<p>No profile image</p>
+<% end %>
+
 <p>
   <strong>Name:</strong>
   <%= @user.name %>

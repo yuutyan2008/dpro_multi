@@ -38,6 +38,9 @@ group :development, :test do
   gem 'faker'
   gem 'launchy'
   gem 'rexml'
+  gem 'letter_opener'
+  gem 'sidekiq'
+
 end
 
 group :development do
