@@ -20,7 +20,7 @@ module RailsFunctionsTaskApp
         request_specs: false
       g.fixture_replacement :factory_bot, dir: "spec/factories"
     end
-
+    # Active JobのアダプターをSidekiqに設定
     config.active_job.queue_adapter = :sidekiq
 
 
